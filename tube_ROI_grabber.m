@@ -6,17 +6,12 @@ I = imread(strcat(filename,'.png'));
 imshow(I,'Border','tight')
 
 %% analyze it
-
 clear all; close all
-
-filename='pH';
-I = imread(strcat(filename,'.png'));
-imshow(I,'Border','tight')
 
 height = length(I(:,1,:));
 width = length(I(1,:,:));
 
-numtubes = 6;
+numtubes = 6; 
 
 bead_ROIs = zeros(5,2*numtubes);
 sup_ROIs = zeros(4,2*numtubes);
